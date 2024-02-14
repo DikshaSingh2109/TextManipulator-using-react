@@ -57,7 +57,7 @@ function App() {
           <Route exact path="/about" element ={<About/> }>
            
           </Route>
-          <Route exact path="/TextManipulator-using-react" element = { <TextForm  showAlert={showAlert}heading = "Enter the text to analyse " mode={mode}/>}>
+          <Route exact path="/" element = { <TextForm  showAlert={showAlert}heading = "Enter the text to analyse " mode={mode}/>}>
            
           </Route>
  </Routes>
