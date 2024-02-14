@@ -45,7 +45,7 @@ function App() {
   return (
     <> 
   
-  <Router basename="">
+  <Router basename="/TextManipulator-using-react">
   <Navbar title= "TextUtils"  mode={mode} toggleMode={toggleMode}/>
   <Alert alert ={alert}/>
   <div className="container my-3">
