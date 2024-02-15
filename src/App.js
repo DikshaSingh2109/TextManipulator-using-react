@@ -45,7 +45,7 @@ function App() {
   return (
     <> 
  
-  <Router basename="/TextManipulator-using-react">
+  <Router basename="">
    <Navbar title= "TextUtils"  mode={mode} toggleMode={toggleMode}/>
   <Alert alert ={alert}/>
   <div className="container my-3">
@@ -54,10 +54,10 @@ function App() {
           {/* /users----->componenet1 
           /users/home----->component2 
            exact path isiliye likhte hai takki exact path se confusion na create hoe aur shi jgh navigate hoye bss */}
-          <Route exact path="/about" element ={<About/> }>
+          <Route  path="/about" element ={<About/> }>
            
           </Route>
-          <Route exact path="/TextManipulator-using-react" element = { <TextForm  showAlert={showAlert}heading = "Enter the text to analyse " mode={mode}/>}>
+          <Route exact path="/" element = { <TextForm  showAlert={showAlert}heading = "Enter the text to analyse " mode={mode}/>}>
            
           </Route>
  </Routes>
