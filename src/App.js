@@ -7,7 +7,8 @@ import Alert from './components/Alert';
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  BrowserRouter
   
 } from "react-router-dom";
 
@@ -45,7 +46,7 @@ function App() {
   return (
     <> 
  
-  <Router basename="">
+  <BrowserRouter basename="TextManipulator-using-react">
    <Navbar title= "TextUtils"  mode={mode} toggleMode={toggleMode}/>
   <Alert alert ={alert}/>
   <div className="container my-3">
@@ -63,7 +64,7 @@ function App() {
  </Routes>
 
   </div>
-  </Router>
+  </BrowserRouter>
   </>
   );
 }
